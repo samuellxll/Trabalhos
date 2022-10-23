@@ -1,0 +1,27 @@
+
+body{
+
+    background: blueviolet url(IMG/fundo.jpg)  top center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+#formulario{
+
+    text-align: center;
+    margin: 10% 25%;
+    color: rgb(240, 248, 255);
+    display: block;
+}
+#formulario-1{
+
+    text-align: center;
+
+    background-color:#dcdcdca9  ;
+    width: 80%;
+    height: 180px;
+    background-image:  url(IMG/icone-usuario.png) no-repeat  ;
+    background-image: url(IMG/perfil.png) no-repeat;
+    background-image: url(IMG/icone-cadeado.png) no-repeat;
+
+
+}
