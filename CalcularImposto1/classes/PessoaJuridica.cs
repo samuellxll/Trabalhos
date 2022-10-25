@@ -12,7 +12,31 @@ namespace CalcularImposto1.classes
 
         public override float CalcularImposto(float rendimento)
         {
-            throw new NotImplementedException();
+            if (rendimento<3000) {
+
+                float resultado = (rendimento *0.03f);
+
+                return resultado;
+
+            }else if( rendimento <=6000){
+
+                float resultado = (rendimento *0.05f);
+                
+                return resultado;
+
+            }else if( rendimento <= 10000){
+
+            float resultado = (rendimento *0.07f);
+
+                return resultado;
+
+            }else{
+
+            float resultado = (rendimento *0.09f);
+
+                return resultado;
+
+            }
         }
 
         public bool ValidarCNPJ(string CNPJ)

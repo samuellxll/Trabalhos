@@ -10,9 +10,29 @@ namespace CalcularImposto1.classes
         
         public DateTime dataNasc{get; set;}
 
+                
         public override float CalcularImposto(float rendimento)
         {
-            throw new NotImplementedException();
+            if(rendimento <=1500){
+
+                float resultado = (rendimento / 100) * 2;
+
+                return resultado;
+
+            }else if(rendimento > 1500 && rendimento < 3000){
+
+                float resultado = (rendimento / 100) * 3.5f;
+
+                return resultado;
+
+            }else{
+
+                float resultado = (rendimento/ 100) * 5;
+
+                return resultado;
+
+            }
+
         }
 
         public bool ValidarDataNacimento(DateTime DataNasc)
